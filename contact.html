@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+
+<!----------------- contact us details ------------------->
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+ (83) 701-7034</h5>
+                    <p>Monday to Saturday, 11AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-whatsapp"></i>
+                <span>
+                    <h5>+ (83) 701-7034</h5>
+                    <p>Send Us A Message</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@stridein.co.za</h5>
+                    <p>Email Us</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col"></div>
+    </div>
+</section>
+
+<!----------------- alternatively------------------->
+
+
+
+<!----------------- contact us form ------------------->
+<section class="contact">
+    <h3>Alternatively, Fill In This Form</h3>
+    <p>Once Filled In, We Will Contact You</p>
+    <form class="contact-form" action="submit_form.php" method="post">
+        <div class="input-group">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="input-group">
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <i class="fa fa-user"></i>
+        </div>
+        <div class="input-group">
+            <input type="tel" name="phone" placeholder="Cellphone Number" pattern="[0-9]{10}" required>
+            <i class="fa fa-phone"></i>
+        </div>
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <i class="fa fa-envelope"></i>
+        </div>
+        <div class="btn-group">
+            <button class="submit" type="submit">Submit</button>
+        </div>
+    </form>
+</section>
+    
+<!----------------- Footer ------------------->
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>Stridein Consultancy is dedicated to helping businesses succeed in the digital world. 
+    <br>As one of the fewest e-commerce consulting firms in South Africa, we offer expert guidance in web development, digital marketing, branding, and sales strategy.<br>Our goal is to provide tailored solutions that drive growth and enhance your online presence.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Stridein</p>
+</section>
+
+<!----------------- Javascript Toggle Menu ------------------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>

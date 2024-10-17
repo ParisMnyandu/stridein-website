@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>One of SA's Few E-commerce Consulting Firms</h1>
+    <p>"Empowering Your Digital Growth"</p>
+    <a href="contact.html" class="hero-btn">Request A Call</a>
+</div>
+
+</section>
+
+<!-- -------------Skills ----------------->
+
+<section class="skills">
+    <h1>Skills We Offer</h1>
+    <p>Our expert consulting team provides a wide range of skills to help your business thrive in the digital landscape.</p>
+
+    <div class="row">
+        <div class="skills-col">
+            <h4>Web Development</h4>
+            <p> From selecting the right web builders to integrating essential features like e-commerce platforms and payment gateways, we ensure your website not only looks great but also performs seamlessly. Whether you're starting from scratch or looking to revamp your existing site, our team delivers solutions that drive engagement and conversions.</p>
+        </div>
+        <div class="skills-col">
+            <h4>Sales</h4>
+            <p> We develop tailored sales strategies that drive revenue growth and customer loyalty. Our approach includes optimizing your sales funnel, improving conversion rates, and training you or your team to close deals effectively.</p>
+        </div>
+        <div class="skills-col">
+            <h4>Branding</h4>
+            <p> We help you create a strong, cohesive brand identity that resonates with your audience. From logo design to social media presence, our branding services ensure your product or service stands out and leaves a lasting impression.</p>
+        </div>
+        <div class="skills-col">
+            <h4>Optimization</h4>
+            <p> We enhance your business efficiency through optimization strategies, from refining your website's performance to streamlining your digital marketing efforts. Our goal is to maximize your ROI and drive sustainable growth.</p>
+        </div>
+    </div>
+</section>
+
+<!----------------- Free Crash Course ------------------->
+
+<section class="course">
+    <h1>Free Crash Course</h1>
+    <p>A gift from us to you. Click the button below to download our free crash course, so that you get a glimpse of what ecommerce is about</p>
+    <a href="/Users/user/Desktop/stridein page/Stridein Consultant Crash Course.pdf" download="Stridein Consultant Crash Course.pdf" class="download-link">Download Course</a>
+
+    <div class="row">
+        <div class="course-col">
+            <img src="images/commerce.jpg">
+            <div class="layer">
+                <h3>GROW</h3>
+            </div>
+        </div>
+        <div class="course-col">
+            <img src="images/commerce2.png">
+            <div class="layer">
+                <h3>YOUR</h3>
+            </div>
+        </div>
+        <div class="course-col">
+            <img src="images/commerce3.png">
+            <div class="layer">
+                <h3>BUSINESS</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!----------------- Testimonials ------------------->
+
+<section class="testimonials">
+    <h1>What Our Client Says</h1>
+    <p>Below Is The Feedback We Received From Our clients</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="Images/client1.jpg">
+            <div>
+                <p>I had troubles getting value from my social media content and Stridein really assisted me with monetising my content on digital platforms and I'm really thankful</p>
+                <h3>Gabriel Mensah</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="Images/client2.jpg">
+            <div>
+                <p>At first I had no idea how to reach customers online through advertising and that totally changed after a few sessions with them, so I highly recommend them for people who are running a business</p>
+                <h3>Nobuhle Nzama</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------------- Call To Action ------------------->
+
+<section class="cta">
+    <h1>Get In Touch With Us And<br>Start Your Session</h1>
+    <a href="contact.html" class="hero-btn">Contact Us</a>
+</section>
+
+<!----------------- Footer ------------------->
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>Stridein Consultancy is dedicated to helping businesses succeed in the digital world. 
+    <br>As one of the fewest e-commerce consulting firms in South Africa, we offer expert guidance in web development, digital marketing, branding, and sales strategy.<br>Our goal is to provide tailored solutions that drive growth and enhance your online presence.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Stridein</p>
+</section>
+
+<!----------------- Javascript Toggle Menu ------------------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>
