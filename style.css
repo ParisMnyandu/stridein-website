@@ -283,7 +283,7 @@ h3{
     padding-top: 100px;
     text-align: center;
 }
-.testimonial-col{
+.testimonial-col {
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -292,7 +292,10 @@ h3{
     padding: 25px;
     cursor: pointer;
     display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
 }
+
 .testimonial-col img{
     height: 40px;
     margin-left: 5px;
@@ -308,6 +311,11 @@ h3{
 }
 .testimonial-col .fa{
     color: #ffd700;
+}
+
+.testimonial-col:hover {
+    transform: scale(1.05); /* This will make the testimonial pop slightly */
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 @media(max-width: 700px){
