@@ -176,21 +176,23 @@ p{
 }
 
 .skills-col {
-    flex-basis: 23%; /* Adjust this percentage to fit four columns in a row */
+    flex-basis: 23%; 
     background: #fff3f3;
     border-radius: 10px;
     padding: 20px 12px;
     box-sizing: border-box;
-    margin-bottom: 20px; /* Adds some bottom margin for better spacing on smaller screens */
-    transition: 0.5s;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1);
 }
 h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
-.skills-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+.skills-col:hover {
+    transform: scale(1.05); /* This will make the column pop slightly */
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 /* ----------Course------------ */
