@@ -195,6 +195,14 @@ h3{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .skills-col:hover {
+        transform: scale(1.02); /* Smaller scale on hover for mobile screens */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    }
+}
+
 /* ----------Course------------ */
 
 .course{
