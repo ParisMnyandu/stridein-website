@@ -158,18 +158,48 @@
         navLinks.style.right = "-200px";
     }
     
- // Touch effect for skills columns on mobile
-    document.querySelectorAll('.skills-col').forEach((col) => {
-        col.addEventListener('touchstart', () => {
-            col.style.transform = 'scale(1.05)';
-            col.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.2)';
-            
-            setTimeout(() => {
-                col.style.transform = 'scale(1)';
-                col.style.boxShadow = 'none';
-            }, 200); // Adjust timing as desired
+ // Function to check if the screen width is less than 768px (indicating a mobile device)
+function isMobileDevice() {
+    return window.innerWidth < 768;
+}
+
+// Select all skill columns
+const skillCols = document.querySelectorAll('.skills-col');
+
+// Apply the zoom effect only on mobile
+skillCols.forEach((col) => {
+    col.addEventListener('click', (event) => {
+        if (isMobileDevice()) {
+            // Remove zoomed class from any other columns
+            document.querySelectorAll('.skills-col.zoomed').forEach((zoomedCol) => {
+                zoomedCol.classList.remove('zoomed');
+            });
+
+            // Add zoomed class to the clicked column
+            col.classList.add('zoomed');
+
+            // Prevent the event from propagating further up the DOM
+            event.stopPropagation();
+        }
+    });
+});
+
+// Remove the zoom effect when clicking outside the skill column or on scroll (only on mobile)
+if (isMobileDevice()) {
+    document.addEventListener('click', (event) => {
+        // Remove the zoom effect by removing the "zoomed" class
+        document.querySelectorAll('.skills-col.zoomed').forEach((zoomedCol) => {
+            zoomedCol.classList.remove('zoomed');
         });
     });
+
+    window.addEventListener('scroll', () => {
+        // Remove the zoom effect on scroll
+        document.querySelectorAll('.skills-col.zoomed').forEach((zoomedCol) => {
+            zoomedCol.classList.remove('zoomed');
+        });
+    });
+}
 
 // Touch effect for course columns on mobile
     document.querySelectorAll('.course-col').forEach((col) => {
