@@ -212,6 +212,12 @@ h3{
     }
 }
 
+/* Mobile Click Effect */
+.skills-col.zoomed {
+    transform: scale(1.1); /* Adjust scale as needed for mobile pop-up effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow for emphasis */
+}
+
 /* ----------Course------------ */
 
 .course{
