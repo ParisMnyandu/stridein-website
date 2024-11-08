@@ -157,7 +157,19 @@
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
-
+    
+ // Touch effect for skills columns on mobile
+    document.querySelectorAll('.skills-col').forEach((col) => {
+        col.addEventListener('touchstart', () => {
+            col.style.transform = 'scale(1.05)';
+            col.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.2)';
+            
+            setTimeout(() => {
+                col.style.transform = 'scale(1)';
+                col.style.boxShadow = 'none';
+            }, 200); // Adjust timing as desired
+        });
+    });
 
 </script>
 
