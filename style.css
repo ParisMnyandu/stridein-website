@@ -203,6 +203,15 @@ h3{
     }
 }
 
+/* Add click event for mobile */
+@media (max-width: 768px) {
+    .skills-col {
+        /* Reset any hover-specific properties for mobile */
+        transform: scale(1); 
+        box-shadow: none;
+    }
+}
+
 /* ----------Course------------ */
 
 .course{
