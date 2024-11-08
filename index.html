@@ -171,6 +171,24 @@
         });
     });
 
+// Touch effect for course columns on mobile
+    document.querySelectorAll('.course-col').forEach((col) => {
+    col.addEventListener('touchstart', () => {
+        const layer = col.querySelector('.layer');
+        layer.style.background = 'rgba(255, 255, 255, 0.782)';
+        const text = layer.querySelector('h3');
+        text.style.bottom = '49%';
+        text.style.opacity = '1';
+
+        // Optional: Remove the effect after a delay to simulate hover-out
+        setTimeout(() => {
+            layer.style.background = 'transparent';
+            text.style.bottom = '0';
+            text.style.opacity = '0';
+        }, 1000); // Adjust timing as needed
+    });
+});
+    
 </script>
 
 </body>
