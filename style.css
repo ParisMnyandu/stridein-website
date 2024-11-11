@@ -429,6 +429,24 @@ h3{
     color:#fff;
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .about-us {
+        display: block; /* Stack elements vertically */
+        text-align: center; /* Center-align content */
+    }
+    
+    .about-col {
+        flex-basis: 100%; /* Take full width */
+        padding: 10px 0; /* Adjust padding for mobile */
+    }
+    
+    .image-col img {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Add top margin to space it from text */
+    }
+}
+
 /* ----------Contact us------------ */
 .contact {
     padding: 50px 20px;
