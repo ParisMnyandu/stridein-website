@@ -625,10 +625,22 @@ h3{
 
 .separator-line {
     border: none; /* Removes the default border */
-    height: 1px; /* Sets the thickness */
-    background-color: #ddd; /* Sets the color of the line */
-    width: 80%; /* Adjusts the width of the line */
+    height: 2px; /* Adjust the thickness of the line */
+    width: 90%; /* Width of the line */
     margin: 20px auto; /* Centers the line and adds spacing */
+    background: linear-gradient(to right, transparent, #ccc, transparent); /* Creates the gradient effect with pointy ends */
+    opacity: 0.8; /* Adds subtle transparency */
 }
 
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .separator-line {
+        width: 95%; /* Makes the line slightly wider on smaller screens */
+    }
+}
 
+@media (max-width: 480px) {
+    .separator-line {
+        width: 100%; /* Full width for very small screens */
+    }
+}
