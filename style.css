@@ -644,3 +644,14 @@ h3{
         width: 100%; /* Full width for very small screens */
     }
 }
+
+
+.icons a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the icon color stays the same as the font-awesome style */
+}
+
+.icons a:hover {
+    color: #e74c3c; /* Optional: Add a hover effect for the icons */
+}
+
