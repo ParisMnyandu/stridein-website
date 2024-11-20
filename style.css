@@ -655,19 +655,4 @@ h3{
     color: #e74c3c; /* Optional: Add a hover effect for the icons */
 }
 
-/* Mission */
-.mission {
-    width: 80%; /* Adjusts the width to keep it responsive */
-    margin: auto; /* Centers the section horizontally */
-    text-align: center; /* Centers the text */
-    padding: 50px 20px; /* Adds padding for spacing */
-}
-
-.mission h1 {
-    font-size: 36px; /* Font size matching the "Free Crash Course" header */
-    font-weight: 600; /* Ensures bold header text */
-    color: #333; /* Darker text color for visibility */
-    margin-bottom: 20px; /* Adds space between the header and paragraph */
-}
-
 
