@@ -410,6 +410,7 @@ h3{
     max-width: 100%; /* Adjust the size of the image */
     height: auto;
     margin-left: 20px; /* Adds some space between text and image */
+    border-radius: 10px; /* Adds slightly rounded corners */
 }
 
 .about-col h1 {
