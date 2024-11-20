@@ -670,9 +670,4 @@ h3{
     margin-bottom: 20px; /* Adds space between the header and paragraph */
 }
 
-.mission p {
-    font-size: 16px; /* Smaller font size for the paragraph */
-    color: #555; /* Softer text color for readability */
-    line-height: 1.8; /* Improves paragraph spacing */
-}
 
