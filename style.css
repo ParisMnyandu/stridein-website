@@ -229,8 +229,8 @@ h3{
 .course a.download-link{
     display: inline-block;
     text-decoration: none;
-    color: black;
-    border:1px solid black;
+    color: white;
+    border:1px solid red;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
