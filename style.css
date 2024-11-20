@@ -655,3 +655,36 @@ h3{
     color: #e74c3c; /* Optional: Add a hover effect for the icons */
 }
 
+/* Mission */
+.mission {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff3f3;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.mission h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8; /* Improve readability */
+    padding: 0 10px; /* Add slight horizontal padding for better text alignment */
+}
+
+.mission h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #c4391d;
+    margin: 10px auto;
+}
