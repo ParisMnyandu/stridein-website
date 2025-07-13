@@ -326,7 +326,18 @@ if (isMobileDevice()) {
 });
     
 </script>
-
+<!-- ==========  SCRIPT  ========== -->
+<script>
+  document.querySelectorAll('.ring').forEach(r=>{
+    const pct   = +r.dataset.percent;
+    const offs  = 339 * (1 - pct/100);
+    r.querySelector('.fg').style.strokeDashoffset = offs;
+    if(!r.querySelector('.percent').textContent.includes('%') &&
+       !r.querySelector('.percent').textContent.includes('$')){
+         r.querySelector('.percent').textContent = pct + '%';
+    }
+  });
+</script>
 <!----------------- LinkedIn Tracking Script ------------------->
     <script type="text/javascript">
         _linkedin_partner_id = "8202409";
