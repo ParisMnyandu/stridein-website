@@ -714,12 +714,13 @@ h3{
 }
 
 /* ===== IMPACT STATS ===== */
+/* ===== IMPACT layout / colour tweak ===== */
 .impact{
   width:80%;
   margin:auto;
   padding:100px 0 50px;
-  background:#0e1a22;          /* same dark section tone you used elsewhere */
-  color:#fff;
+  background:#ffffff;   /* white background */
+  color:#000;           /* default black text */
   border-radius:10px;
 }
 .impact-title{
@@ -777,4 +778,22 @@ h3{
   .stat{flex-direction:column;align-items:flex-start}
   .ring{margin-bottom:10px}
 }
+
+/* two‑column grid on laptop / desktop */
+@media(min-width:768px){
+  .impact-inner{        /* wrapper we add below */
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2.5rem 4rem;    /* row, column gaps */
+  }
+}
+
+/* mobile: stack + centre */
+@media(max-width:767px){
+  .stat{flex-direction:column;align-items:center;text-align:center}
+  .ring{margin-bottom:10px}
+}
+
+/* ensure fact text is black */
+.fact{color:#000;font-size:15px;line-height:1.6}
 
