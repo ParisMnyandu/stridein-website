@@ -142,73 +142,7 @@
         </div>
     </div>
 </section>
-<!-- ========== Research STATS SECTION ========== -->
-<section class="impact">
-  <h2 class="impact-title">Research</h2>
 
-  <!-- ───────── 1 ───────── -->
-  <div class="stat">
-    <div class="ring" data-percent="90">
-      <svg viewBox="0 0 120 120">
-        <circle class="bg" cx="60" cy="60" r="54"/>
-        <circle class="fg" cx="60" cy="60" r="54"/>
-      </svg>
-      <span class="percent">0%</span>
-    </div>
-    <p class="fact">
-      <strong>90 %</strong> of global commerce growth will come from digital
-      channels over the next decade, with Africa one of the fastest‑growing
-      internet regions.
-    </p>
-  </div>
-
-  <!-- ───────── 2 ───────── -->
-  <div class="stat">
-    <div class="ring" data-percent="75">
-      <svg viewBox="0 0 120 120">
-        <circle class="bg" cx="60" cy="60" r="54"/>
-        <circle class="fg" cx="60" cy="60" r="54"/>
-      </svg>
-      <span class="percent">$75B</span>
-    </div>
-    <p class="fact">
-      Africa’s e‑commerce market is projected to hit <strong>$75 billion by
-      2025</strong>, yet many businesses remain under‑represented online.
-    </p>
-  </div>
-
-  <!-- ───────── 3 ───────── -->
-  <div class="stat">
-    <div class="ring" data-percent="90">
-      <svg viewBox="0 0 120 120">
-        <circle class="bg" cx="60" cy="60" r="54"/>
-        <circle class="fg" cx="60" cy="60" r="54"/>
-      </svg>
-      <span class="percent">90%</span>
-    </div>
-    <p class="fact">
-      SMEs make up <strong>90 %</strong> of African businesses, yet many cite
-      a lack of digital skills and tools as a major growth barrier
-      (IFC).
-    </p>
-  </div>
-
-  <!-- ───────── 4 ───────── -->
-  <div class="stat">
-    <div class="ring" data-percent="39">
-      <svg viewBox="0 0 120 120">
-        <circle class="bg" cx="60" cy="60" r="54"/>
-        <circle class="fg" cx="60" cy="60" r="54"/>
-      </svg>
-      <span class="percent">39%</span>
-    </div>
-    <p class="fact">
-      Mobile internet usage in Sub‑Saharan Africa reached
-      <strong>39 % in 2023</strong> and keeps rising—fueling mobile‑first
-      business opportunities (GSMA).
-    </p>
-  </div>
-</section>
 <!----------------- Our Mission ------------------->
 <section class="mission">
     <h1>Our Mission</h1>
@@ -326,18 +260,7 @@ if (isMobileDevice()) {
 });
     
 </script>
-<!-- ==========  SCRIPT  ========== -->
-<script>
-  document.querySelectorAll('.ring').forEach(r=>{
-    const pct   = +r.dataset.percent;
-    const offs  = 339 * (1 - pct/100);
-    r.querySelector('.fg').style.strokeDashoffset = offs;
-    if(!r.querySelector('.percent').textContent.includes('%') &&
-       !r.querySelector('.percent').textContent.includes('$')){
-         r.querySelector('.percent').textContent = pct + '%';
-    }
-  });
-</script>
+
 <!----------------- LinkedIn Tracking Script ------------------->
     <script type="text/javascript">
         _linkedin_partner_id = "8202409";
