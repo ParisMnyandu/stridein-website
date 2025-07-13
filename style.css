@@ -673,8 +673,18 @@ h3{
     }
 }
 
-
-.icons a {
+<style>
+  .impact{padding:3rem 1rem;background:#0e1a22;color:#fff;max-width:1000px;margin:auto}
+  .impact-title{text-align:center;margin-bottom:2rem;font-size:2.1rem}
+  .stat{display:flex;align-items:center;gap:1.5rem;margin:1.8rem 0;flex-wrap:wrap}
+  .ring{position:relative;width:140px;height:140px;flex:0 0 140px}
+  .ring svg{transform:rotate(-90deg);width:100%;height:100%}
+  .ring circle{fill:none;stroke-width:12;stroke-linecap:round}
+  .bg{stroke:#273642}
+  .fg{stroke:#ff7a00;stroke-dasharray:339;stroke-dashoffset:339;transition:stroke-dashoffset 1.4s ease-out}
+  .percent{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700}
+  .fact{flex:1;font-size:0.95rem;line-height:1.45}
+</style>.icons a {
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Ensures the icon color stays the same as the font-awesome style */
 }
